@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+h1,h2{
+    font-weight: 700;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+}
+p{
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+header,section#servicios,section#portfolio{
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+}
+header#header{
+    padding: 30px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header#header .logo img{
+    max-width: 70%;
+}
+
+header#header nav a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;    
+    padding-right: 10px;
+}
+header#header nav a::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background-color: black;
+    margin-right: 10px;
+}
+header#header nav a:first-child::before{
+    display: none;
+}
+
+section#banner{
+    width: 100%;
+    min-height: 80vh;
+    background: url("../img/fondo.jpg") no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#banner h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+section#banner p{
+    width: 50%;
+    margin: 20px;
+
+}
+section#banner a{
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(89,0,255);
+    padding: 20px 40px;
+}
+
+section#servicios {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: solid 1px lightgray;
+    
+}
+
+section#servicios div.cabecera{
+    margin: 50px 0;
+    text-align: center; 
+}
+
+section#servicios div.cabecera h2{
+    color: rgb(89,0,255);
+    margin: 10px 0;
+}
+
+section#servicios div.cabecera p{
+    width: 50%;
+    max-width: 800px;
+    margin: auto;
+}
+
+section#servicios div.cuerpo{
+    display: flex;
+    gap: 50px;
+}
+
+section#servicios div.cuerpo div{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+section#servicios div.cuerpo article{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section#portfolio {
+    min-height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+section#portfolio img{
+    max-width: 100%;
+}
+
+section#portfolio figure{
+    margin: 0 20px;
+}
+
+section#portfolio h2{
+    font-size: 1.5rem;
+    width: 100%;
+    color: rgb(89,0,255);
+    margin: 20px 0;
+}
+
+section#portfolio h4{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+section#portfolio h5{
+    font-size: 1.2rem;
+    color: gray;
+}
+
+footer#footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    margin: auto;
+    text-align: center;
+}
+
+footer#footer a{
+    color: black;
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+
+}
+
+footer#footer a:hover{
+    background-color: rgb(89, 0, 255);
+    color: white;
+
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+h1,h2{
+    font-weight: 700;
+}
+h3,h4,h5,h6{
+    font-weight: 500;
+}
+p{
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+
+header,section#servicios,section#portfolio{
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+}
+header#header{
+    padding: 30px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+header#header .logo img{
+    max-width: 70%;
+}
+
+header#header nav a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;    
+    padding-right: 10px;
+}
+header#header nav a::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background-color: black;
+    margin-right: 10px;
+}
+header#header nav a:first-child::before{
+    display: none;
+}
+
+section#banner{
+    width: 100%;
+    min-height: 80vh;
+    background: url("../img/fondo.jpg") no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#banner h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+section#banner p{
+    width: 50%;
+    margin: 20px;
+
+}
+section#banner a{
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(89,0,255);
+    padding: 20px 40px;
+}
+section#servicios {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column; */
+    flex-direction: column;
+    border-bottom:solid 1px #dddd;
+}
+
+section#servicios div.cabecera{
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+}
+section#servicios div.cabecera h2{
+    color:rgb(89,0,255);
+    margin: 10px 0;
+}
+section#servicios div.cuerpo{
+
+    display: flex;
+    gap:50px;
+}
+section#servicios div.cuerpo div{
+    display: flex;
+    align-items: flex-end;
+    gap:10px;
+    margin-bottom: 10px;
+}
+section#servicios div.cuerpo article{
+    /* border:solid 1px rgb(89,0,255); */
+    /* border-radius: 20px; */
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    padding: 20px;
+}
+
+section#portfolio {
+    display: flex;
+    min-height: 70vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  
+  }
+  section#portfolio figure{
+      margin:0 20px;
+  }
+
+  section#portfolio img{
+    max-width: 100%;
+  }
+section#portfolio h2{
+    font-size: 2rem;
+    width: 100%;
+    color: rgb(89,0,255);
+    margin: 20px 0;
+  }
+section#portfolio h4{
+    font-size: 1.5rem;
+    color:#666;
+    margin: 10px 0;
+}
+section#portfolio h5{
+    font-size: 1.2rem;
+    color: #999;
+}
+
+footer#footer{
+    width: 100%;
+    background-color: #000;
+    padding: 70px 0;
+    text-align: center;
+}
+
+footer#footer a{
+    color: #000;
+    font-size: 2rem;
+    background-color: #fff;
+    border-radius:50%;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+footer#footer a:hover{
+    color:white;
+    background-color: rgb(89,0,255);
+} */
+
+
+
+
+
+
+

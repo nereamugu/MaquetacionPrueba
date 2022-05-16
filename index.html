@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación CSS3</title>
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- iconos -->
+    <link rel="stylesheet" href="icons/fontello/rrss/css/fontello.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav class="nav">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">Clientes</a>
+            <a href="">Contacto</a>
+        </nav>
+    </header>
+
+    <main id="index">
+        <section id="banner">
+            <h1>Lorem ipsum dolor</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ab provident at adipisci dolorum, tempora inventore quo corporis consequuntur id similique iure asperiores, quae cum incidunt nostrum qui voluptates beatae.</p>
+            <a href="">Ver detalles</a>
+        </section>
+
+        <section id="servicios">
+            <!-- podrianser header envez de div porque son la cabecera de la seccion -->
+            <div class="cabecera">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero rem omnis quasi in facilis ipsa autem voluptatum molestiae magni distinctio. adipisicing elit. Non, voluptates modi alias sit corporis accusantium!</p>
+            </div>
+            <div class="cuerpo">
+                <!-- article*3>(div>img[src="img/icon$.png"]+h3{Lorem ipsum}})+(p>lorem) -->
+                <article>
+                    <div>
+                        <img src="img/icon1.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam incidunt soluta voluptas laboriosam aut. Ab quibusdam aut temporibus perferendis eos sequi ipsam quo accusamus incidunt suscipit numquam minus, repellendus dolore!</p>
+                </article>
+                <article>
+                    <div>
+                        <img src="img/icon2.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <p>In error corporis magnam quas doloribus, a non consequuntur ab, neque dolore, porro iste hic eius autem. Voluptatibus unde, at et assumenda debitis, corporis natus quisquam quas laboriosam magnam voluptatum?</p>
+                </article>
+                <article>
+                    <div>
+                        <img src="img/icon3.png" alt="">
+                        <h3>Lorem ipsum</h3>
+                    </div>
+                    <p>Quis ducimus expedita tempore reiciendis ut numquam facere, distinctio, voluptatum esse rem, excepturi quasi voluptatibus accusantium. Vitae iste dolore iusto aspernatur at molestiae, nisi amet deserunt quos voluptas fugiat! Pariatur!</p>
+                </article> 
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <!-- figure*2>img[src="img/foto$.jpg"]+caption -->
+            <figure>
+                <img src="img/foto1.jpg" alt="">
+                <caption>
+                    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                    <h5>Lorem ipsum</h5>
+                </caption>
+            </figure>
+            <figure>
+                <img src="img/foto2.jpg" alt="">
+                <caption>
+                    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+                    <h5>Lorem ipsum</h5>
+                </caption>
+            </figure>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <!-- a*3>span.icon- -->
+        <a href=""><span class="icon-instagram"></span></a>
+        <a href=""><span class="icon-twitter"></span></a>
+        <a href=""><span class="icon-facebook"></span></a>
+    </footer>
+</body>
+</html>
